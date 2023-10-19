@@ -1,0 +1,1 @@
+# tsoa-base-service
