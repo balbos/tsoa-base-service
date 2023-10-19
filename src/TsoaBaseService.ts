@@ -1,6 +1,7 @@
+// TsoaBaserService.ts
 import {Model, Document, Types} from "mongoose";
 
-export class BaseService<T extends Document> {
+export class TsoaBaseService<T extends Document> {
     constructor(private model: Model<T & { projectId: string }>) {}
 
     public toObjectId(id: string): Types.ObjectId {

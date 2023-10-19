@@ -1,14 +1,26 @@
 {
   "name": "@balbos/tsoa-base-service",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "",
-  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build"
+  },
+
   "repository": {
     "type": "git",
     "url": "git+https://github.com/balbos/tsoa-base-service.git"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
+  },
+  "peerDependencies": {
+    "mongoose": "^7.4.0"
   },
   "author": "Balbos",
   "license": "ISC"
